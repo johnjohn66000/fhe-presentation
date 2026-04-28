@@ -41,7 +41,7 @@
   .slide-counter { color: rgba(255,255,255,0.6); font-size: 13px; min-width: 70px; text-align: center; }
 
   /* Slide container */
-  .slide-wrap { width: min(90vw, 160vh * 16/9); aspect-ratio: 16/9; position: relative; }
+  .slide-wrap { flex-shrink: 0; width: min(96vw, calc((100vh - 80px) * 16 / 9)); aspect-ratio: 16 / 9; position: relative; }
   .slide { position: absolute; inset: 0; border-radius: 8px; overflow: hidden; display: none; flex-direction: column; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
   .slide.active { display: flex; }
 
